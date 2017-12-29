@@ -2,6 +2,7 @@ package org.world;
 
 import java.util.ArrayList;
 
+
 public class World {
 	
 	private static ArrayList<GameObject> gameObjects = new ArrayList<GameObject>();

@@ -1,11 +1,11 @@
 package org.graphics;
 
+import org.input.KeyInput;
 import org.input.MouseInput;
 
 import com.jogamp.newt.opengl.GLWindow;
 import com.jogamp.opengl.GLCapabilities;
 import com.jogamp.opengl.GLProfile;
-import com.jogamp.opengl.util.FPSAnimator;
 
 public class Renderer {
 	
@@ -27,6 +27,7 @@ public class Renderer {
 		window.setResizable(false);
 		window.addGLEventListener(new EventListener());
 		window.addMouseListener(new MouseInput());
+		window.addKeyListener(new KeyInput());
 		
 		//FPSAnimator animator = new FPSAnimator(window, 60);
 		//animator.start();
